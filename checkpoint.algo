@@ -1,0 +1,20 @@
+VAR
+    sentence:STRING;
+    ch:CHAR;
+    len:INTEGER :=0;
+    voy:INTEGER :=0;
+    word:INTEGER :=1;
+BEGIN
+read(sentence);
+FOR i FROM 0 TO length(sentence) STEP 1  DO
+    WHILE (ch<>".") DO
+    len=len+1;
+    END_WHILE
+    IF (ch=="a", "e", "i", "o", "u","A", "E", "I", "O", "U") THEN
+        voy=voy+1;
+    END_IF
+    IF (ch:=" ") THEN
+        word=word+1
+    END_IF
+END_FOR
+END
