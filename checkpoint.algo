@@ -7,7 +7,7 @@ VAR
 BEGIN
 read(sentence);
 FOR i FROM 0 TO length(sentence) STEP 1  DO
-    WHILE (ch<>".") DO
+    WHILE (ch[i]<>".") DO
     len=len+1;
     END_WHILE
     IF (ch=="a", "e", "i", "o", "u","A", "E", "I", "O", "U") THEN
